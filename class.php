@@ -12,7 +12,7 @@ use \Bitrix\Sale\Basket;
 use \Bitrix\Sale\Discount\Gift;
 use \Bitrix\Sale\Fuser;
 
-class iplogicSaleProductGifts extends \CBitrixComponent
+class iplogicSaleProductSets extends \CBitrixComponent
 	implements \Bitrix\Main\Engine\Contract\Controllerable, \Bitrix\Main\Errorable
 {
 	/** @var ErrorCollection */
