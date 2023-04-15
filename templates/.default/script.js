@@ -5,7 +5,6 @@
 		return;
 
 	window.JCSaleProductSetsComponent = function(params) {
-		this.formPosting = false;
 		this.siteId = params.siteId || '';
 		this.template = params.template || '';
 		this.componentPath = params.componentPath || '';

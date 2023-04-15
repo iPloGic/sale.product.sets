@@ -154,18 +154,3 @@
 		margin-bottom: 15px;
 	}
 }
-
-
-.ajax-loader {
-	text-align: center;
-	font-size: 25px;
-	padding:0 0 25px 0;
-	color: #393939;
-}
-.ajax-loader .fa {
-	animation: fa-spin .6s infinite steps(8);
-}
-.ajax-loader .fa::before {
-	color: #393939;
-	content: "\f110";
-}

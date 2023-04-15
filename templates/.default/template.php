@@ -86,7 +86,11 @@ $firstBlock = true;
 									     data-product-quantity="<?=$arItem["PRODUCT"]["QUANTITY"]?>"
 									     data-price="<?=$arItem["PRICE"]["DISCOUNT_PRICE"]?>"
 									>
-										<div class="ipl-sps-product-img" style="background-image: url('<?=$arItem["DETAIL_PICTURE"]["SRC"]?>')"></div>
+										<div class="ipl-sps-product-img" style="background-image: url('<?=$arItem["DETAIL_PICTURE"]["SRC"]?>')" title="<?=$arItem["NAME"]?>"></div>
+										<div>+ <?=$arItem["PRICE"]["DISCOUNT_PRICE"]?> ₽</div>
+										<a href="<?=$arItem["DETAIL_PAGE_URL"]?>" target="_blank">
+											<?=Loc::getMessage('IPL_SPS_ABOUT')?>
+										</a>
 									</div>
 									<?
 									$firstRrod = false;
@@ -126,10 +130,10 @@ $firstBlock = true;
 						</div>
 					</div>
 				</div>
-				<br><br>
 			</div>
 		<? }
 	} ?>
+	<br><br>
 </div>
 <script>
 	window.obJCSaleProductSetsComponent = new JCSaleProductSetsComponent(<?=CUtil::PhpToJSObject($arJsParams)?>)
